@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GYM</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body{
+        color: antiquewhite;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.training.jpg');
+        /* height: 2000px; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left{
+         position: absolute;
+         left: 30px;
+         top: 20px;
+         display: inline-block;
+         /* border: 3px solid red; */
+    }
+    .left img{
+        width: 65px;
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        width: 580px;
+        margin: 20px auto ;
+        /* position: static;
+        top: 20px; */ 
+        /* border: 3px solid rgb(200, 224, 18); */
+
+    }
+    .right{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        display: inline-block;
+        /* border: 3px solid rgb(25, 219, 119); */
+    }
+     .navbar{
+        position: fixed;
+        top: 20px;
+    }  
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+    .navbar a{
+        color: azure;
+        text-decoration: none;
+        padding: 20px;
+    }
+    .navbar a:hover, .navbar a:active{
+        text-decoration: underline;
+        color: aqua;
+    }
+    .btn{
+        margin: 0px 5px;
+        background-color: black;
+        color: aqua;
+        padding: 3px 14px;
+        border-radius: 10px;
+        border-color: brown;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: rgb(41, 143, 233);
+    }
+    .count{
+        /* border: 2px solid greenyellow; */
+        margin: 70px -80px;
+        padding: 40px 60px;
+        width: 300px;
+        border-radius: 2px;
+        border-radius: 10px ;
+    }
+    .form input{
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding: 5px;
+        margin: 2px auto;
+        border: 3px solid rgb(100, 139, 100);
+        border-radius: 9px;
+    }
+    .count h3{
+        text-align: center;
+    }
+    .count button{
+        display: block;
+        width: 215px;
+        margin: 10px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="gym logo1.png" alt="error">
+            <div>
+                MY GYM
+            </div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#">Fitness club</a> </li>
+                <li><a href="#">contact</a> </li>
+             </ul>
+        </div>
+        <!-- right for button  -->
+        <div class="right">
+           <button class="btn">Log in</button>
+           <button class="btn">sing up</button>
+        </div>
+    </header>
+    <div class="count">
+        <h3>Join the gym </h3>
+        <form action="noaction.php"></form>
+        <div class="form">
+            <input type="text" name="" placeholder="enter your name">
+        </div>
+        <div class="form">
+            <input type="number" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form">
+            <input type="number" name="" placeholder="enter your whight">
+        </div>
+        <div class="form">
+            <input type="email" name="" placeholder="enter your email">
+        </div>
+        <div>
+            <button class="btn">submit</button>
+        </div>
+    </div>
+</body>
+</html>
